@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פאוזה - תפריט</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .tabs button {
+            background-color: #ddd;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .tabs button:hover {
+            background-color: #bbb;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .menu-item {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        /* Food */
+        .menu-container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .title {
+      text-align: center;
+      color: #8b4513;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #8b4513;
+      padding-bottom: 1rem;
+    }
+    
+    .category {
+      color: #8b4513;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      /* font-weight: bold; */
+    }
+    
+    .subcategory {
+      color: #5c3018;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .vertical_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .vertical_item_1 {
+      width: 43%;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.7rem 0;
+      align-items: baseline;
+    }
+    
+    .item-name {
+      font-weight: bold;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-name span {
+    font-size: 0.9rem;    
+    }
+    
+    .item-description {
+      color: #666;
+      font-size: 0.8rem;
+      /* margin-right: 0.5rem; */
+    }
+    
+    .price {
+      color: #8b4513;
+      font-weight: bold;
+      white-space: nowrap;
+      margin-right: 1rem;
+    }
+    
+    .divider {
+      border-bottom: 1px solid #e0d5c5;
+      margin: 1rem 0;
+    }
+
+
+
+
+    /* Drinks */
+
+    .menu-container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .title {
+      text-align: center;
+      color: #8b4513;
+      font-size: 2rem;
+      margin-bottom: 1.2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #8b4513;
+      padding-bottom: 1rem;
+    }
+    
+    .category {
+      color: #8b4513;
+      font-size: 1.4rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    
+    .subcategory {
+      color: #5c3018;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.7rem 0;
+      align-items: baseline;
+    }
+    
+    .item-name {
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    
+    .item-description {
+      color: #666;
+      font-size: 0.8rem;
+      margin-right: 0.5rem;
+    }
+    
+    .price {
+      color: #8b4513;
+      font-weight: bold;
+      white-space: nowrap;
+      margin-right: 1rem;
+    }
+    
+    .divider {
+      border-bottom: 1px solid #e0d5c5;
+      margin: 1rem 0;
+    }
+
+  </style>
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>פאוזה - תפריט</h1>
+</header>
+
+<div class="tabs">
+    <button onclick="showTab('food')">אוכל</button>
+    <button onclick="showTab('drinks')">שתייה</button>
+</div>
+
+<div id="food" class="tab-content">
+    <div class="menu-container">
+      <div class="title">Café Pausa</div>
+     
+      <div class="category">לחם עם שדרוג</div>
+      <div class="item">
+        <div>
+          <div class="item-name">כריך טונה</div>
+          <div class="item-description">סלט טונה, עגבנייה, חסה, לאבנה, נבטים</div>
+        </div>
+        <div class="price">₪40</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">כריך אבוקדו 🌱</div>
+          <div class="item-description">אבוקדו בצאנקים, תערובת לבייגלה (שומשום,קצח,פרג,בצל), מלפפון, לאליק</div>
+        </div>
+        <div class="price">₪42</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">כריך סלק</div>
+          <div class="item-description">סלק, גבינת עיזים, רוקט, בלסמי</div>
+        </div>
+        <div class="price">₪42</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">כריך קממבר</div>
+          <div class="item-description">חמאה, דבש, קממבר, צנוניות, רוקט</div>
+        </div>
+        <div class="price">₪44</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">טוסט קלאסי</div>
+          <div class="item-description">רוטב פיצה, מוצרלה, פטה</div>
+        </div>
+        <div class="price">₪44</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">טוסט גאודה עיזים</div>
+          <div class="item-description">רוטב פלפלים מתוק, גאודה עיזים, רוקט, עגבניות, בזיליקום</div>
+        </div>
+        <div class="price">₪48</div>
+      </div>
+  
+      <div class="divider"></div>
+  
+      <div class="category">ירוקים אבל טעימים</div>
+      <div class="item">
+        <div>
+          <div class="item-name">יווני</div>
+          <div class="item-description">עגבניות, מלפפון, בצל סגול, זיתי קלמטה, חסה, פלפלים, גבינת פטה, זעתר, שמן זית לימון ומלח</div>
+        </div>
+        <div class="price">₪46</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">קיסר</div>
+          <div class="item-description">מיקס חסות יפות, פרמזן, קרוטונים, רוטב קיסר</div>
+        </div>
+        <div class="price">₪46</div>
+      </div>
+  
+      <div class="divider"></div>
+      <div class="vertical_container">
+        <div class="vertical_item_1">
+        <div class="category">חובה ליד הקפה</div>
+        <div class="item">
+          <div class="item-name">דניש אגוזים וקינמון</div>
+          <div class="price">₪22</div>
+        </div>
+        <div class="item">
+          <div class="item-name">דניש שוקולד</div>
+          <div class="price">₪22</div>
+        </div>
+        <div class="item">
+          <div class="item-name">דניש גבינה מלוחה</div>
+          <div class="price">₪22</div>
+        </div>
+        <div class="item">
+          <div class="item-name">בראוניז 🌱</div>
+          <div class="price">₪12</div>
+        </div>
+        <div class="item">
+          <div class="item-name">שוקולד צ'יפס</div>
+          <div class="price">₪14</div>
+        </div>
+        <div class="item">
+          <div class="item-name">קרואסון שקדים</div>
+          <div class="price">₪9</div>
+        </div>
+        <div class="item">
+          <div class="item-name">רוגלך <span> (4 ב16₪)</span></div>
+          <div class="price">₪5</div>
+        </div>
+        <div class="item">
+          <div class="item-name">כדור שוקולד <span> (4 ב16₪)</span></div>
+          <div class="price">₪5</div>
+        </div>
+        <div class="item">
+          <div class="item-name">סינבון</div>
+          <div class="price">₪18</div>
+        </div>
+        <div class="item">
+          <div class="item-name">עוגת גזר</div>
+          <div class="price">₪16</div>
+        </div>
+        <div class="item">
+          <div class="item-name">מוזלי</div>
+          <div class="price">₪32</div>
+        </div>
+        
+      </div>
+        <div class="divider"></div>
+        <div>
+        <div class="category">חם, עגול וטעים</div>
+        <div class="item">
+          <div>
+            <div class="item-name">מרגריטה</div>
+            <div class="item-description">רוטב עגבניות, מוצרלה, בזיליקום</div>
+          </div>
+          <div class="price">₪50</div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-name">חלפיניו</div>
+            <div class="item-description">רוטב עגבניות, מוצרלה, חלפיניו</div>
+          </div>
+          <div class="price">₪54</div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="item-name">פאוזה</div>
+            <div class="item-description">רוטב עגבניות, מוצרלה, גבינה בולגרית, קלמטה, בצל סגול, בלסמי</div>
+          </div>
+          <div class="price">₪58</div>
+        </div>
+      </div>
+      </div>
+    </div>
+</div>
+
+<div id="drinks" class="tab-content">
+    <div class="menu-container">
+      <div class="title">Café Pausa</div>
+      <div class="category">משקאות חמים.. אבל אפשר גם עם קרח</div>
+      <div class="subcategory">קפה</div>
+      <div class="item">
+        <div class="item-name">קפה הפוך</div>
+        <div class="price">₪14</div>
+      </div>
+      <div class="item">
+        <div class="item-name">אספרסו / כפול</div>
+        <div class="price">₪8 / ₪10</div>
+      </div>
+      <div class="item">
+        <div class="item-name">אמריקנו חם</div>
+        <div class="price">₪12</div>
+      </div>
+      <div class="item">
+        <div class="item-name">אמריקנו קר</div>
+        <div class="price">₪14</div>
+      </div>
+      <div class="item">
+        <div class="item-name">קפה קר</div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div class="item-name">קפה שחור</div>
+        <div class="price">₪10</div>
+      </div>
+      <div class="item">
+        <div class="item-name">קורטדו</div>
+        <div class="price">₪10</div>
+      </div>
+      <div class="item">
+        <div class="item-name">שוקו חם / קר</div>
+        <div class="price">₪12 / ₪16</div>
+      </div>
+  
+      <div class="subcategory">תה</div>
+      <div class="item">
+        <div>
+          <div class="item-name">DETOX</div>
+          <div class="item-description">לואיזה, נענע</div>
+        </div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">CALM</div>
+          <div class="item-description">קמומיל, תפוח, ציפורן</div>
+        </div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">FRESH</div>
+          <div class="item-description">היביסקוס, ליים</div>
+        </div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div>
+          <div class="item-name">NAMASTEA</div>
+          <div class="item-description">צ'אי מסאלה</div>
+        </div>
+        <div class="price">₪22</div>
+      </div>
+  
+      <div class="divider"></div>
+  
+      <div class="category">טבעי, טרי, טעים</div>
+      <div class="item">
+        <div class="item-name">תפוזים</div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div class="item-name">לימונדה</div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div class="item-name">תפוחים</div>
+        <div class="price">₪16</div>
+      </div>
+      <div class="item">
+        <div class="item-name">תפוז, גזר, כרכום</div>
+        <div class="price">₪16</div>
+      </div>
+  
+      <div class="divider"></div>
+  
+      <div class="category">פשוט משקאות קרים</div>
+      <div class="item">
+        <div class="item-name">קולה / קולה זירו</div>
+        <div class="price">₪12</div>
+      </div>
+      <div class="item">
+        <div class="item-name">ס. פלגרינו לימון</div>
+        <div class="price">₪12</div>
+      </div>
+      <div class="item">
+        <div class="item-name">ספרייט</div>
+        <div class="price">₪10</div>
+      </div>
+      <div class="item">
+        <div class="item-name">סודה</div>
+        <div class="price">₪8</div>
+      </div>
+      <div class="item">
+        <div class="item-name">מים</div>
+        <div class="price">₪8</div>
+      </div>
+      <div class="item">
+        <div class="item-name">מים בטעמים</div>
+        <div class="price">₪12</div>
+      </div>
+  
+    </div>
+</div>
+
+<script>
+    function showTab(tabName) {
+        let tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => {
+            tab.classList.remove('active');
+        });
+
+        let activeTab = document.getElementById(tabName);
+        activeTab.classList.add('active');
+    }
+
+    // Show food tab by default
+    showTab('food');
+</script>
+
+</body>
+</html>
