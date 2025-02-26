@@ -3,209 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>פאוזה - תפריט</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            direction: rtl;
-            text-align: right;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .tabs {
-            display: flex;
-            justify-content: center;
-            background-color: #fff;
-            margin-top: 20px;
-        }
-        .tabs button {
-            background-color: #ddd;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin: 0 10px;
-        }
-        .tabs button:hover {
-            background-color: #bbb;
-        }
-        .tab-content {
-            display: none;
-            padding: 20px;
-            background-color: #fff;
-            margin-top: 20px;
-        }
-        .tab-content.active {
-            display: block;
-        }
-        .menu-item {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-
-        /* Food */
-        .menu-container {
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    
-    .title {
-      text-align: center;
-      color: #8b4513;
-      font-size: 2rem;
-      margin-bottom: 1.2rem;
-      font-weight: bold;
-      border-bottom: 2px solid #8b4513;
-      padding-bottom: 1rem;
-    }
-    
-    .category {
-      color: #8b4513;
-      font-size: 1.4rem;
-      margin-top: 1rem;
-      margin-bottom: 1.5rem;
-      /* font-weight: bold; */
-    }
-    
-    .subcategory {
-      color: #5c3018;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    .vertical_container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .vertical_item_1 {
-      width: 43%;
-    }
-
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 0.7rem 0;
-      align-items: baseline;
-    }
-    
-    .item-name {
-      font-weight: bold;
-      font-size: 1rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .item-name span {
-    font-size: 0.9rem;    
-    }
-    
-    .item-description {
-      color: #666;
-      font-size: 0.8rem;
-      /* margin-right: 0.5rem; */
-    }
-    
-    .price {
-      color: #8b4513;
-      font-weight: bold;
-      white-space: nowrap;
-      margin-right: 1rem;
-    }
-    
-    .divider {
-      border-bottom: 1px solid #e0d5c5;
-      margin: 1rem 0;
-    }
-
-
-
-
-    /* Drinks */
-
-    .menu-container {
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    
-    .title {
-      text-align: center;
-      color: #8b4513;
-      font-size: 2rem;
-      margin-bottom: 1.2rem;
-      font-weight: bold;
-      border-bottom: 2px solid #8b4513;
-      padding-bottom: 1rem;
-    }
-    
-    .category {
-      color: #8b4513;
-      font-size: 1.4rem;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-weight: bold;
-    }
-    
-    .subcategory {
-      color: #5c3018;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin: 0.7rem 0;
-      align-items: baseline;
-    }
-    
-    .item-name {
-      font-weight: bold;
-      font-size: 1rem;
-    }
-    
-    .item-description {
-      color: #666;
-      font-size: 0.8rem;
-      margin-right: 0.5rem;
-    }
-    
-    .price {
-      color: #8b4513;
-      font-weight: bold;
-      white-space: nowrap;
-      margin-right: 1rem;
-    }
-    
-    .divider {
-      border-bottom: 1px solid #e0d5c5;
-      margin: 1rem 0;
-    }
-
-  </style>
-    </style>
 </head>
 <body>
 
-<header>
-    <h1>פאוזה - תפריט</h1>
-</header>
-
-<div class="tabs">
+<div class="hero_banner">
+  <div class="tabs">
     <button onclick="showTab('food')">אוכל</button>
     <button onclick="showTab('drinks')">שתייה</button>
 </div>
+</div>
+
 
 <div id="food" class="tab-content">
     <div class="menu-container">
@@ -471,20 +280,7 @@
     </div>
 </div>
 
-<script>
-    function showTab(tabName) {
-        let tabs = document.querySelectorAll('.tab-content');
-        tabs.forEach(tab => {
-            tab.classList.remove('active');
-        });
-
-        let activeTab = document.getElementById(tabName);
-        activeTab.classList.add('active');
-    }
-
-    // Show food tab by default
-    showTab('food');
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>

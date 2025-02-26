@@ -1,0 +1,199 @@
+// Variables for colors
+$primary-color: #8b4513;
+$secondary-color: #5c3018;
+$background-color: #f0f0f0;
+$text-color: #666;
+$header-background: #333;
+$button-background: #ddd;
+$button-hover-background: #fff4d7;
+$divider-color: #e0d5c5;
+$white-color: #ffffff;
+
+// Variables for font sizes
+$font-size-large: 2rem;
+$font-size-medium: 1.4rem;
+$font-size-small: 1rem;
+$font-size-xsmall: 0.9rem;
+$font-size-xsmall2: 0.8rem;
+
+// Body Styling
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $header-background;
+    color: $white-color;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.hero_banner {
+    background-image: url('./assets/hero_cover.JPG');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: nowrap;
+    background-repeat: no-repeat;
+    height: 500px;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    color: $primary-color;
+    font-size: $font-size-large;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 1rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: flex-end;
+    button {
+        background-color: $secondary-color;
+        border: none;
+        padding: 30px 40px;
+        cursor: pointer;
+        margin: 0 15px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 20px;
+        color: $white-color;
+        border: 2px inset $white-color;
+
+        &:hover {
+            background-color: $button-hover-background;
+            color: $secondary-color;
+        }
+    }
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: $white-color;
+    margin-top: 20px;
+
+    &.active {
+        display: block;
+    }
+}
+
+.menu-item {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.menu-container {
+    background-color: $white-color;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.category {
+    color: $primary-color;
+    font-size: $font-size-medium;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Food */
+.subcategory {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.vertical_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .vertical_item_1 {
+        width: 43%;
+    }
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+    align-items: baseline;
+
+    .item-name {
+        font-weight: bold;
+        font-size: $font-size-small;
+        margin-bottom: 0.2rem;
+
+        span {
+            font-size: $font-size-xsmall;
+        }
+    }
+
+    .item-description {
+        color: $text-color;
+        font-size: $font-size-xsmall2;
+    }
+
+    .price {
+        color: $primary-color;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-right: 1rem;
+    }
+}
+
+.divider {
+    border-bottom: 1px solid $divider-color;
+    margin: 1rem 0;
+}
+
+/* Drinks */
+
+.subcategory {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+    align-items: baseline;
+
+    .item-name {
+        font-weight: bold;
+        font-size: $font-size-small;
+    }
+
+    .item-description {
+        color: $text-color;
+        font-size: $font-size-xsmall2;
+        margin-right: 0.5rem;
+    }
+
+    .price {
+        color: $primary-color;
+        font-weight: bold;
+        white-space: nowrap;
+        margin-right: 1rem;
+    }
+}
+
+.divider {
+    border-bottom: 1px solid $divider-color;
+    margin: 1rem 0;
+}
