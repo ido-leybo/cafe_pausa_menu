@@ -10,14 +10,14 @@
 
 <div class="hero_banner">
   <div class="tabs">
-    <button onclick="showTab('food')">אוכל</button>
-    <button onclick="showTab('drinks')">שתייה</button>
+    <button class="menu-button" data-target="food" onclick="showTab('food')">אוכל</button>
+    <button class="menu-button" data-target="drinks" onclick="showTab('drinks')">שתייה</button>
   </div>
 </div>
 
-
-<div id="food" class="tab-content">
-    <div class="menu-container">
+<div id="menu-section" class="menu-container">
+  <div id="food" class="tab-content">
+    
         <div class="title">Café Pausa</div>
       
         <div class="category">לחם עם שדרוג</div>
@@ -90,24 +90,24 @@
             <div class="price">₪22</div>
           </div>
           <div class="item">
-            <div class="item-name">דניש שוקולד</div>
+            <div class="item-name">דניש גבינה מלוחה</div>
             <div class="price">₪22</div>
           </div>
           <div class="item">
-            <div class="item-name">דניש גבינה מלוחה</div>
-            <div class="price">₪22</div>
+            <div class="item-name">דניש שוקולד   <span> (2 28₪)</span></div>
+            <div class="price">₪16</div>
+          </div>
+          <div class="item">
+            <div class="item-name">שוקולד צ'יפס   <span> (2 28₪)</span></div>
+            <div class="price">₪16</div>
           </div>
           <div class="item">
             <div class="item-name">בראוניז 🌱</div>
             <div class="price">₪12</div>
           </div>
           <div class="item">
-            <div class="item-name">שוקולד צ'יפס</div>
-            <div class="price">₪14</div>
-          </div>
-          <div class="item">
             <div class="item-name">קרואסון שקדים</div>
-            <div class="price">₪9</div>
+            <div class="price">₪10</div>
           </div>
           <div class="item">
             <div class="item-name">רוגלך <span> (4 ב16₪)</span></div>
@@ -154,10 +154,8 @@
             </div>
             <div class="price">₪58</div>
           </div>
-    </div>
-</div>
-
-<div id="drinks" class="tab-content">
+  </div>
+  <div id="drinks" class="tab-content">
     <div class="menu-container">
       <div class="title">Café Pausa</div>
       <div class="category">משקאות חמים.. אבל אפשר גם עם קרח</div>
@@ -275,6 +273,9 @@
   
     </div>
 </div>
+</div>
+
+
 
 <script src="main.js"></script>
 
