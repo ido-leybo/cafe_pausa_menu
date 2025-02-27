@@ -180,6 +180,10 @@ header {
     border-radius: 5px;
     background-color: rgba(92, 48, 24, 0.9333333333);
   }
+  .hero_banner .tabs button:hover {
+    background-color: #fff4d7;
+    color: #5c3018;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

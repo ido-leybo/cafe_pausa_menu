@@ -212,6 +212,10 @@ header {
                 font-size: 15px;
                 border-radius: 5px;
                 background-color: $third-color;
+                &:hover {
+                    background-color: $button-hover-background;
+                    color: $secondary-color;
+                }
             }
 
         }
