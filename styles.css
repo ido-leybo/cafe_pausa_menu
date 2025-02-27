@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
   direction: rtl;
@@ -42,16 +43,16 @@ header {
   align-items: flex-end;
 }
 .tabs button {
-  background-color: #5c3018;
+  background-color: rgba(92, 48, 24, 0.9333333333);
   border: none;
   padding: 30px 40px;
   cursor: pointer;
   margin: 0 15px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-weight: bold;
   font-size: 20px;
   color: #ffffff;
-  border: 2px inset #ffffff;
+  border: 1px solid #fff4d7;
 }
 .tabs button:hover {
   background-color: #fff4d7;
@@ -62,7 +63,6 @@ header {
   display: none;
   padding: 20px;
   background-color: #ffffff;
-  margin-top: 20px;
 }
 .tab-content.active {
   display: block;
@@ -75,7 +75,6 @@ header {
 
 .menu-container {
   background-color: #ffffff;
-  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -167,6 +166,20 @@ header {
 .divider {
   border-bottom: 1px solid #e0d5c5;
   margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero_banner {
+    max-height: 30vh; /* או גובה קטן יותר */
+    object-fit: cover;
+  }
+  .hero_banner .tabs button {
+    padding: 15px 20px;
+    font-weight: 300;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgba(92, 48, 24, 0.9333333333);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
