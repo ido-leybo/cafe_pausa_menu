@@ -9,7 +9,4 @@ function showTab(tabName) {
 }
 
 // Show food tab by default
-showTab('passover');
-
-// Show food tab by default
-// showTab('food');
+showTab('food');
