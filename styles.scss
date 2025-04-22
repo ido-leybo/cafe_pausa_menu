@@ -17,9 +17,13 @@ $font-size-small: 1rem;
 $font-size-xsmall: 0.9rem;
 $font-size-xsmall2: 0.8rem;
 
+$font-family-alef: alef;
+$font-family-ariel: Arial, sans-serif;
+
+
 // Body Styling
 body {
-    font-family: Arial, sans-serif;
+    font-family: $font-family-ariel;
     direction: rtl;
     text-align: right;
     background-color: $background-color;
