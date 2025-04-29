@@ -17,13 +17,19 @@ $font-size-small: 1rem;
 $font-size-xsmall: 0.9rem;
 $font-size-xsmall2: 0.8rem;
 
-$font-family-alef: alef;
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/assets/fonts/Alef-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 $font-family-ariel: Arial, sans-serif;
 
-
+html {
+    font-family: 'MyCustomFont', sans-serif;
+}
 // Body Styling
 body {
-    font-family: $font-family-ariel;
     direction: rtl;
     text-align: right;
     background-color: $background-color;
@@ -65,6 +71,7 @@ header {
     margin-top: 20px;
     align-items: flex-end;
     button {
+        font-family: 'MyCustomFont', sans-serif;
         background-color: $third-color;
         border: none;
         padding: 30px 40px;
@@ -185,7 +192,6 @@ header {
     .item-description {
         color: $text-color;
         font-size: $font-size-xsmall2;
-        margin-right: 0.5rem;
     }
 
     .price {

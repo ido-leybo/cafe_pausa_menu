@@ -1,6 +1,15 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("/assets/fonts/Alef-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-family: "MyCustomFont", sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
   direction: rtl;
   text-align: right;
   background-color: #f0f0f0;
@@ -43,6 +52,7 @@ header {
   align-items: flex-end;
 }
 .tabs button {
+  font-family: "MyCustomFont", sans-serif;
   background-color: rgba(92, 48, 24, 0.9333333333);
   border: none;
   padding: 30px 40px;
@@ -154,7 +164,6 @@ header {
 .item .item-description {
   color: #666;
   font-size: 0.8rem;
-  margin-right: 0.5rem;
 }
 .item .price {
   color: #8b4513;
